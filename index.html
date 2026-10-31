@@ -611,15 +611,14 @@
             loading.style.display = 'flex';
             loading.innerHTML = `<div class="spinner"></div><div>Generating high quality image...</div>`;
             img.style.display = 'none';
-
-            const promptParts = [
+const promptParts = [
     selections.style.prompt,
-    'beautiful adult woman',
+    'beautiful young woman',
     selections.age + ' years old',
     selections.ethnicity.prompt,
     selections.body.prompt,
-    'looking at viewer, elegant, high quality, detailed face, masterpiece'
-             ];
+    'looking at viewer, elegant pose, high quality, detailed face, masterpiece, soft lighting'
+];
             const fullPrompt = promptParts.join(', ');
 
             info.innerHTML = `
