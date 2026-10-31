@@ -669,7 +669,7 @@
 
         // Google AI Studio / Gemini API (Imagen 3)
         async function generateWithGemini(prompt, img, loading) {
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${apiKey}`;
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${APIkey}`;
             
             const body = {
                 instances: [{ prompt: prompt }],
