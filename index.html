@@ -426,10 +426,10 @@
 
         // ========== DATA (Soft prompts) ==========
         const bodyTypes = [
-            { id: 'curvy', label: 'Curvy Body', prompt: 'soft feminine curves, full figure, wide hips, hourglass silhouette, elegant proportions' },
-            { id: 'skinny', label: 'Skinny', prompt: 'slender elegant figure, delicate frame, slim waist' },
-            { id: 'large', label: 'Large Parts', prompt: 'voluptuous figure, full bust, wide hips, soft rounded proportions, feminine shape' }
-        ];
+    { id: 'curvy', label: 'Curvy Body', prompt: 'soft gentle curves, graceful figure, balanced proportions, elegant silhouette' },
+    { id: 'skinny', label: 'Skinny', prompt: 'slim graceful figure, delicate frame, elegant posture' },
+    { id: 'large', label: 'Large Parts', prompt: 'full soft figure, rounded gentle shape, feminine silhouette, elegant proportions' }
+];
         const ethnicities = [
             { id: 'asian', label: 'Asian', prompt: 'Asian woman, East Asian features' },
             { id: 'european', label: 'European', prompt: 'European woman, Caucasian features' },
@@ -607,13 +607,13 @@
             img.style.display = 'none';
 
             const promptParts = [
-                selections.style.prompt,
-                'beautiful young woman',
-                selections.age + ' years old',
-                selections.ethnicity.prompt,
-                selections.body.prompt,
-                'looking at viewer, elegant pose, high quality, detailed face, masterpiece, soft lighting'
-            ];
+    selections.style.prompt,
+    'beautiful young lady',
+    selections.age + ' years old',
+    selections.ethnicity.prompt,
+    selections.body.prompt,
+    'looking at viewer, elegant pose, high quality, detailed face, soft lighting, masterpiece'
+];
             const fullPrompt = promptParts.join(', ');
 
             info.innerHTML = `
