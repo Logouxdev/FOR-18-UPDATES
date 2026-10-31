@@ -432,9 +432,9 @@
 
         // ========== DATA ==========
         const bodyTypes = [
-            { id: 'curvy', label: 'Curvy Body', prompt: 'curvy thick feminine body, wide hips, soft curves, hourglass figure' },
-            { id: 'skinny', label: 'Skinny', prompt: 'slim skinny body, slender figure, delicate frame' },
-            { id: 'large', label: 'Large Parts', prompt: 'large breasts, big hips, voluptuous body, exaggerated feminine proportions' }
+    { id: 'curvy', label: 'Curvy Body', prompt: 'soft feminine curves, full figure, wide hips, hourglass silhouette, elegant proportions' },
+    { id: 'skinny', label: 'Skinny', prompt: 'slender elegant figure, delicate frame, slim waist' },
+    { id: 'large', label: 'Large Parts', prompt: 'voluptuous figure, full bust, wide hips, soft rounded proportions, feminine shape' }
         ];
         const ethnicities = [
             { id: 'asian', label: 'Asian', prompt: 'Asian woman, East Asian features' },
@@ -613,13 +613,13 @@
             img.style.display = 'none';
 
             const promptParts = [
-                selections.style.prompt,
-                'beautiful adult woman',
-                selections.age + ' years old',
-                selections.ethnicity.prompt,
-                selections.body.prompt,
-                'looking at viewer, elegant, high quality, detailed face, masterpiece'
-            ];
+    selections.style.prompt,
+    'beautiful adult woman',
+    selections.age + ' years old',
+    selections.ethnicity.prompt,
+    selections.body.prompt,
+    'looking at viewer, elegant, high quality, detailed face, masterpiece'
+             ];
             const fullPrompt = promptParts.join(', ');
 
             info.innerHTML = `
